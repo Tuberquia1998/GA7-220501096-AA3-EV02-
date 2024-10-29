@@ -1,0 +1,99 @@
+/* Login.css */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: url('../imagenes/1988 (1).jpg') no-repeat center center fixed; /* Cambia './imagenes' por '../imagenes' */
+    background-size: cover; /* Asegura que la imagen cubra toda la pantalla */
+    position: relative; /* Para facilitar el posicionamiento de los elementos */
+    color: #0e0a09; /* Color de texto por defecto */
+}
+
+h2 {
+    color: #f72020;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.9); /* Fondo blanco con más opacidad */
+    border-radius: 10px;
+    padding: 40px; /* Más espacio en el interior */
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Sombra más profunda */
+    width: 100%;
+    max-width: 450px; /* Ampliar el ancho máximo */
+    backdrop-filter: blur(15px);
+    text-align: center; /* Centra el texto dentro del formulario */
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 12px; /* Ajustar el padding para que sea más cómodo */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem; /* Cambiar tamaño de fuente */
+    transition: border-color 0.3s; /* Transición suave en el borde */
+}
+
+input:focus {
+    border-color: #ff7e5f; /* Color de borde al enfocar */
+    outline: none; /* Elimina el contorno predeterminado */
+}
+
+.login-button {
+    background-color: #fff;
+    color: #0e0a09;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.login-button:hover {
+    background-color: #ff7e5f;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.forgot-password, .register-link {
+    margin-top: 15px;
+}
+
+.forgot-password a, .register-link a {
+    color: #007bff; /* Color del enlace */
+    text-decoration: none;
+    transition: color 0.3s; /* Transición suave del color */
+}
+
+.forgot-password a:hover, .register-link a:hover {
+    color: #09090a; /* Color del enlace al pasar el mouse */
+}
+.register-link {
+  color: #f72020; /* Cambia esto al color que desees */
+  text-decoration: none; /* Elimina el subrayado */
+  font-weight: bold; /* Haz que el texto sea más destacado */
+  transition: color 0.3s; /* Suaviza el cambio de color al pasar el mouse */
+}
+
+.register-link:hover {
+  color: #ff7e5f; /* Color al pasar el mouse */
+}
